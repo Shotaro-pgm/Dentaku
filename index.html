@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <p id="msg"></p>
+        <div>
+            <div>
+                <button type="button" name="7" id="button7" onclick="inputSeven()">7</button>
+                <button type="button" name="8" id="button8" onclick="inputEight()">8</button>
+                <button type="button" name="9" id="button9" onclick="inputNine()">9</button>
+                <button type="button" name="allClear" id="allClear" onclick="clearText()">AC</button>
+            </div>
+            <div>
+                <button type="button" name="4" id="button4" onclick="inputFour()">4</button>
+                <button type="button" name="5" id="button5" onclick="inputFive()">5</button>
+                <button type="button" name="6" id="button6" onclick="inputSix()">6</button>
+                <button type="button" name="+" id="tasu" onclick="tas()">+</button>
+            </div>
+            <div>
+                <button type="button" name="1" id="button1" onclick="inputOne()">1</button>
+                <button type="button" name="2" id="button2" onclick="inputTwo()">2</button>
+                <button type="button" name="3" id="button3" onclick="inputThree()">3</button>
+            </div>
+            <div>
+                <button type="button" name="0" id="button0" onclick="inputZero()">0</button>
+                <button type="button" name="calc" onclick="calcNum()">↩︎</button>
+            </div>
+        </div>
+    </form>
+    <script>
+        function inputZero(){
+            let num = "0";
+            msg.innerText += num;
+        }
+
+        function inputOne(){
+            let num = "1";
+            msg.innerText += num;
+        }
+
+        function inputTwo(){
+            let num = "2";
+            msg.innerText += num;
+        }
+
+        function inputThree(){
+            let num = "3";
+            msg.innerText += num;
+        }
+
+        function inputFour(){
+            let num = "4";
+            msg.innerText += num;
+        }
+
+        function inputFive(){
+            let num = "5";
+            msg.innerText += num;
+        }
+
+        function inputSix(){
+            let num = "6";
+            msg.innerText += num;
+        }
+
+        function inputSeven(){
+            let num = "7";
+            msg.innerText += num;
+        }
+
+        function inputEight(){
+            let num = "8";
+            msg.innerText += num;
+        }
+
+        function inputNine(){
+            let num = "9";
+            msg.innerText += num;
+        }
+
+        function clearText(){
+            msg.innerText = "";
+        }
+
+        function calcNum(){
+            let numText = Number(msg.value);
+            msg.innerText = numText;
+        }
+
+        function tas(){
+            let num = "+";
+            msg.innerText += num;
+        }
+    </script>
+</body>
+</html>
